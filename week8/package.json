@@ -1,0 +1,15 @@
+{
+  "name": "week8-cookies-sessions",
+  "version": "1.0.0",
+  "description": "Week 8 Express.js Cookies and Session Management",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2"
+  }
+}
