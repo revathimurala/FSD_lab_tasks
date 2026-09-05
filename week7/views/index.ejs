@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title><%= title %></title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
+  <title>
+    <%= title %>
+  </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
 
-        .error {
-            color: red;
-            font-weight: bold;
-        }
+    .error {
+      color: red;
+      font-weight: bold;
+    }
 
-        .success {
-            color: green;
-            font-weight: bold;
-        }
+    .success {
+      color: green;
+      font-weight: bold;
+    }
 
-        input {
-            margin: 8px 0 15px;
-            padding: 6px;
-        }
+    input {
+      margin: 8px 0 15px;
+      padding: 6px;
+    }
 
-        button {
-            padding: 7px 15px;
-        }
-    </style>
+    button {
+      padding: 7px 15px;
+    }
+  </style>
 </head>
+
 <body>
 
-    <h1><%= title %></h1>
+  <h1>
+    <%= title %>
+  </h1>
 
-    <% if (error) { %>
-        <p class="error"><%= error %></p>
+  <% if (error) { %>
+    <p class="error">
+      <%= error %>
+    </p>
     <% } %>
 
-    <% if (user) { %>
+      <% if (user) { %>
         <p class="success">Welcome, <%= user %>! Your account is ready.</p>
         <a href="/">Go Back</a>
-    <% } else { %>
+        <% } else { %>
 
-        <form action="/register" method="POST">
+          <form action="/register" method="POST">
 
             <label>Username:</label><br>
             <input type="text" name="username"><br>
@@ -51,9 +59,10 @@
 
             <button type="submit">Register</button>
 
-        </form>
+          </form>
 
-    <% } %>
+          <% } %>
 
 </body>
+
 </html>

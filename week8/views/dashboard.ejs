@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Private Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-        }
-    </style>
+  <title>Private Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
-    <h1>Welcome to the Private Dashboard, <%= user %>!</h1>
+  <h1>Welcome to the Private Dashboard, <%= user %>!</h1>
 
-    <p><strong>Session Info:</strong> You are logged in via express-session.</p>
+  <p><strong>Session Info:</strong> You are logged in via express-session.</p>
 
-    <p><strong>Cookie Data:</strong> Your last login/refresh was at:
-        <%= lastVisit %>
-    </p>
+  <p><strong>Cookie Data:</strong> Your last login/refresh was at:
+    <%= lastVisit %>
+  </p>
 
-    <hr>
+  <hr>
 
-    <a href="/logout">Logout</a>
+  <a href="/logout">Logout</a>
 
 </body>
+
 </html>
